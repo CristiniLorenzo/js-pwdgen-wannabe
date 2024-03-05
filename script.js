@@ -10,7 +10,15 @@ console.log(surname)
 const color = prompt('e il tuo colore preferito?')
 console.log(color)
 
+// number question
+const number = prompt('dimmi il tuo numero preferito')
+console.log(number)
+
+const numberAsNumber= parseInt(number)
+console.log(numberAsNumber)
+
+const finalNumber = numberAsNumber + 23
 //password generator
-const passGenerator = `La tua password è: ${nome}${surname}${color}23`
+const passGenerator = `La tua password è: ${nome}${surname}${color}${finalNumber}`
 
 document.getElementById('password').innerHTML = passGenerator
